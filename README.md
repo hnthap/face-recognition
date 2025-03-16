@@ -35,8 +35,9 @@ docker-compose up -d
 
 Then, go to <http://localhost:7860>.
 
+To stop the containers, run:
+
 ```bash
-# Stop the containers
 docker-compose down -v
 ```
 
@@ -46,4 +47,4 @@ docker-compose down -v
 * [x] Use Gradio
 * [ ] Isolate frontend and backend into different images
 * [ ] Try other face recognition techniques (e.g., DeepFace)
-* [ ] Make a Live Demo for this
+* [ ] Make a Live Demo
