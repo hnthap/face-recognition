@@ -1,13 +1,24 @@
 # Real-Time Face Recognition
 
-![Docker](https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white)
-![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=OpenCV&logoColor=white)
-![Gradio](https://img.shields.io/badge/-Gradio-orange?style=flat-square&logo=gradio&logoColor=white)
-![Python 3.11](https://img.shields.io/badge/-Python%203.11-3776AB?style=flat-square&logo=python&logoColor=white)
+<div align="center">
 
-![Screenshot](image.png)
+  [![Stars](https://img.shields.io/github/stars/hnthap/face-recognition?color=yellow&style=flat&label=%E2%AD%90%20stars)](https://github.com/hnthap/face-recognition/stargazers)
+  [![Pulls](https://img.shields.io/docker/pulls/joseph40/face-recognition-gradio?logo=docker)](https://hub.docker.com/r/joseph40/face-recognition-gradio)
+  [![License](http://img.shields.io/:license-MIT-green.svg?style=flat)](LICENSE)
+  
+  <img alt="Screenshot" src="image.png" height="360px" />
+
+</div>
 
 ## Requirements
+
+<div align="center">
+
+  ![Docker](https://img.shields.io/badge/-Docker-46a2f1?style=flat-square&logo=docker&logoColor=white)
+  ![OpenCV](https://img.shields.io/badge/-OpenCV-5C3EE8?style=flat-square&logo=OpenCV&logoColor=white)
+  ![Gradio](https://img.shields.io/badge/-Gradio-orange?style=flat-square&logo=gradio&logoColor=white)
+
+</div>
 
 Docker (Docker Compose) is required.
 
@@ -46,5 +57,5 @@ docker-compose down -v
 * [x] Use OpenCV Haar Cascade
 * [x] Use Gradio
 * [ ] Isolate frontend and backend into different images
-* [ ] Try other face recognition techniques (e.g., DeepFace)
+* [ ] Try other face recognition techniques (e.g., [deepface](https://github.com/serengil/deepface))
 * [ ] Make a Live Demo
