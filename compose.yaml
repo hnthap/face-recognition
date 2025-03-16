@@ -1,0 +1,15 @@
+services:
+
+  gradio:
+    image: joseph40/face-recognition-gradio:0.1.0
+    build: ./gradio
+    ports:
+      - "7860:7860"
+    networks:
+      - fr-app-network
+    environment:
+      - GRADIO_SERVER_NAME=0.0.0.0
+      - GRADIO_SERVER_PORT=7860
+
+networks:
+  fr-app-network:

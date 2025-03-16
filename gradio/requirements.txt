@@ -10,9 +10,7 @@
 # torchvision==0.20.1+cu121
 # torchaudio==2.5.1+cu121
 # optimum[onnxruntime-gpu]<1.21,>=1.20
-
 # opencv-python<4.12,>=4.11
 opencv-contrib-python-headless<4.12,>=4.11
-
-fastapi[standard]<1.0,>=0.115.2
+# fastapi[standard]<1.0,>=0.115.2
 gradio<5.22,>=5.21

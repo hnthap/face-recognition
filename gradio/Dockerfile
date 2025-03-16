@@ -34,7 +34,7 @@ RUN adduser \
 # into this layer.
 RUN --mount=type=cache,target=/root/.cache/pip \
     --mount=type=bind,source=requirements.txt,target=requirements.txt \
-    python -m pip install -r requirements.txt
+    python -m pip install --no-cache-dir -r requirements.txt
 
 # Switch to the non-privileged user to run the application.
 USER appuser
@@ -44,7 +44,9 @@ COPY . .
 
 # Expose the port that the application listens on.
 EXPOSE 7860
+
 ENV GRADIO_SERVER_NAME="0.0.0.0"
+ENV GRADIO_SERVER_PORT="7860"
 
 # Run the application.
 CMD ["python", "main.py"]
